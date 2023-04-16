@@ -1,9 +1,14 @@
-Template for the Read the Docs tutorial
-=======================================
+SMSGFX Documentation project
+============================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This project hosts the documentation for the SMSGFX browser based
+tile editor for Sega Master System and Game Gear.
 
-Read the tutorial here:
+Production build:
+https://smsgfx.qwerky.games/
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Dev build:
+https://develop.smsgfx.pages.dev/
+
+Source code:
+https://github.com/NicDoesCode/SMSGFX

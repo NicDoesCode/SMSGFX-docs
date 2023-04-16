@@ -1,5 +1,5 @@
 """
-Lumache - Python library for cooks and food lovers.
+SMSGFX - Browser based tile editor for Sega Master System and Game Gear platforms.
 """
 
 __version__ = "0.1.0"

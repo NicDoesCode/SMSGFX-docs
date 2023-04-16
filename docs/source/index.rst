@@ -1,10 +1,12 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to the SMSGFX documentation!
+====================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**SMSGFX** is a browser based tile graphics editor for creating
+Sega Master System and Game Gear graphics.
+
+It incorporates several functions such as a browser based paint tool,
+graphics palette editor, import and export image files, import and export
+WLA-DX compatible assembly code.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
