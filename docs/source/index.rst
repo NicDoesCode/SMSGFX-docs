@@ -4,6 +4,9 @@ Welcome to SMSGFX!
 This documentation will assist you with performing simple tasks associated 
 with the product.
 
+.. image:: assets/images/home-page-banner.png
+    :alt: SMSGFX application.
+
 What is SMSGFX?
 ---------------
 SMSGFX is a browser based tile editor that allows you to make graphics for 
