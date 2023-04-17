@@ -113,5 +113,5 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   concepts
+   interface
