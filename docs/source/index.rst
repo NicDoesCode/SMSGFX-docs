@@ -41,3 +41,4 @@ Contents
    how-to/index
    functions/index
    keyboard-shortcuts
+   inline-help
