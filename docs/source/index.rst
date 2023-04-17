@@ -38,5 +38,6 @@ Contents
    quick-overview
    concepts
    interface
+   how-to
    functions
    keyboard-shortcuts
