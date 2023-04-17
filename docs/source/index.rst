@@ -38,6 +38,6 @@ Contents
    quick-overview
    concepts
    interface
-   how-to
-   functions
+   how-to/index
+   functions/index
    keyboard-shortcuts
