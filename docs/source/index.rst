@@ -114,4 +114,5 @@ Contents
 .. toctree::
 
    concepts
+   functions
    interface
