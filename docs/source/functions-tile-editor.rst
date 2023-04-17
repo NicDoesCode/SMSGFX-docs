@@ -96,7 +96,7 @@ To cut or copy a tile:
 To paste a tile: 
 
 * Select the insertion point using the tile select tool, and then click the "Paste" context toolbar option.
-* Select the insertion point using the tile select tool, and then press `Ctrl` + `V` on the keyboard.
+* Select the insertion point using the tile select tool, and then press ``Ctrl`` + ``V`` on the keyboard.
 
 **Mirror of flip a tile**
 
@@ -114,7 +114,7 @@ You can change the position of a tile within the tileset, moving it left, right,
 How to move a tile: 
 
 * Select a tile using the tile select tool and then click the "Move left" or "Move right" button on the context toolbar.
-* Select a tile using the tile select tool and hold down the `Ctrl` key on the keyboard and press the arrow keys to move the tile.
+* Select a tile using the tile select tool and hold down the ``Ctrl`` key on the keyboard and press the arrow keys to move the tile.
 
 
 **Drawing onto tiles (pencil and fill tools)**
@@ -128,7 +128,7 @@ To draw onto tiles:
 #. Optionally select a colour from the palette toolbox.
 #. Click onto the tile set image in the viewport and those pixels will change to the colour index that is selected in the palette toolbox.
 
-The keyboard shortcut key is `P`.
+The keyboard shortcut key is ``P``.
 
 To fill an area with a colour:
 
@@ -136,7 +136,7 @@ To fill an area with a colour:
 #. Optionally select a colour from the palette toolbox.
 #. Click onto the tile set image in the viewport and those pixels as well as any adjacent pixels of the same colour index will change to the colour index that is selected in the palette toolbox.
 
-The keyboard shortcut key is `F` or `B`.
+The keyboard shortcut key is ``F`` or ``B``.
 
 **Choosing colours (eyedropper tool)**
 
@@ -144,7 +144,7 @@ The eyedropper tool is useful if you would like to select the palette colour ind
 
 Simple select the "eyedropper" tool from the toolbar and then click with the primary mouse button onto the pixel that you could like to obtain the colour from.
 
-The keyboard shortcut key is `I`.
+The keyboard shortcut key is ``I``.
 
 **Import tiles from assembly code**
 
@@ -206,7 +206,7 @@ The image can be resized, and you can choose whether to overlay the image over y
 * Select the "Reference image" toolbar button.
 * To move the image, position the mouse inside the desired edge of the reference image in the tile editor viewport, the mouse cursor will change to a resize icon.
 * Click and drag using the primary button.
-* If you would like to maintain the aspect ratio, hold the `Ctrl` key.
+* If you would like to maintain the aspect ratio, hold the ``Ctrl`` key.
 
 **To remove a reference image:**
 
