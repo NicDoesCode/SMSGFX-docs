@@ -1,8 +1,13 @@
 Welcome to SMSGFX!
 ==================
 
-A browser-based tile editor for making graphics for Sega Master System and 
-Sega Game Gear games.
+SMSGFX is a free and easy to use, browser based tile editor that helps you make graphics for retro games 
+consoles, currently supporting:
+
+* Sega Game Gear
+* Sega Master System
+* Nintendo Entertainment System
+* Nintendo Game Boy 
 
 .. image:: assets/images/home-page-banner.png
     :alt: SMSGFX application.
@@ -12,14 +17,15 @@ so that you can bring your ideas to life!
 
 What is SMSGFX?
 ---------------
-SMSGFX is tile editor for Sega Master System and Sega Game Gear games.
+SMSGFX is tile editor to help you make graphics for retro games.
 
 It runs entirely within your web browser and doesn't require any software
 downloads or online cloud accounts to operate.
 
 Using the available tools you can paint up your own tile based graphics, 
-create your colour palettes, and then export your work into a format that the 
-Sega Master System and Game Gear understands for use in your projects.
+define colour palettes and arrange them in tile maps. When you're done you can 
+export your work into a format that the your target console understands 
+for use in your projects.
 
 If you have an existing game project, or graphics as image files then you can 
 also easily bring those graphics into SMSGFX, work with them and then export 
