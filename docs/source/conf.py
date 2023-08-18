@@ -10,6 +10,7 @@ release = '0.1'
 version = '0.1.0'
 
 root_doc = 'source/index'
+master_doc = 'source/index'
 
 # -- General configuration
 extensions = [
