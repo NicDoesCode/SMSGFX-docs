@@ -3,32 +3,33 @@ Concepts
 
 Projects
 --------
-SMSGFX works with objects called "**Projects**", a project is a container for the colour palettes and graphics 
-tiles that you've defined.
+SMSGFX works with objects called "**Projects**", a project is a container for the colour palettes, graphics 
+tiles and tile maps that you've defined.
 
 Palette
 -------
-The Sega Master System and Game Gear use palettes with 16 colour slots per palette. Each slot contains the RGB 
-value for a colour. You can use the same colour in multiple slots.
+A palette is a selection of colours that can be used in your graphics. Retro game consoles all have different 
+limitation when it comes to colour palettes.
 
-When you paint an image it is important to note that each 'pixel' does not store a colour, but instead it stores 
-the slot number of the colour used from 1 to 16. You will notice that as you change colour palettes the colours 
-in your image will also update to reflect the colour palette used.
+The Sega Master System and Game Gear use palettes with 16 colour slots per palette and you may use two palettes
+per tile map, giving you an effective 32 colours. The Nintendo Entertainment System gives you 4 distinct colour 
+palettes, 3 colours each, for 12 in total. The Nintendo Game Boy on the other hand only ever has access to 4 shades 
+of grey. 
+
+When we design graphics for retro games consoles, we need to remember that there are limitations on the colours 
+that you can use and therefore design our images to look good with a minimum number of colours. 
 
 Colours
 -------
-The Sega Master System uses 6-bit colour, this gives you a total count of 64 colours that you can use with your 
-graphics, this limited amount of colours gives Master System games their signature bright and cartoony look.
+We fill our palettes with colours, and depending on the console you may have less or more available to you. 
 
-The Sega Game Gear uses 12-bit colour, this gives you a total count of 4096 colours that you can use with your 
-graphics, this expanded range of colours allows you to pick more complementary colours than the Master System.
-
-Despite the total colours available to you remember that you may only use 16 of these colours per palette meaning 
-that each tile may show a maximum of 16 colours.
+For example; the Sega Master System gives you a total of 64 colours to use from, whereas the Game Gear gives 
+you a total of 4096. The Nintendo Game Boy allows you only 4 shades of grey, whereas the Nintendo Entertainment 
+System gives you 56 colours to work with.
 
 Tiles
 -----
-The Sega Master System and Game Gear construct their graphics using a mosaic of 8x8 pixel tiles.
+Most retro games consoles construct their graphics using a mosaic of 8x8 pixel tiles.
 
 To construct a scene we lay out these tiles out in a 'tile map'. You can not draw on individual pixels on these 
 systems, your scene is constructed from these tiles.
@@ -51,8 +52,8 @@ the screen.
 In a game, usually the player's character is a sprite, depending on the size of the player's character, several 
 tiles and sprites may be used to act as one large sprite.
 
-There are limitations on sprites, with only 64 allowed at once, and no more than 8 can appear side by side, if 
-there are more than 8 side by side you will experience flickering graphics.
+There are limitations on sprites, that vary per system. If you exceed the limitations you may experience flickering 
+graphics in your game.
 
 Tile set
 --------

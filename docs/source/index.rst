@@ -1,16 +1,18 @@
 Welcome to SMSGFX!
 ==================
 
-SMSGFX is a free and easy to use, browser based tile editor that helps you make graphics for retro games 
-consoles, currently supporting:
+SMSGFX is a free and easy to use, browser based tile editor to help you make graphics for retro games
+consoles.
+
+.. image:: assets/images/home-page-banner.png
+    :alt: SMSGFX application.
+
+Consoles that are currently supported:
 
 * Sega Game Gear
 * Sega Master System
 * Nintendo Entertainment System
 * Nintendo Game Boy 
-
-.. image:: assets/images/home-page-banner.png
-    :alt: SMSGFX application.
 
 This documentation site will help you get started with the SMSGFX application 
 so that you can bring your ideas to life!
