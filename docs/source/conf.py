@@ -34,4 +34,4 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-root_doc = './docs/source/index.rst'
+root_doc = 'docs/source/index.rst'
