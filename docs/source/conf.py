@@ -9,8 +9,9 @@ author = 'Nicholas Furgiuele'
 release = '0.1'
 version = '0.1.0'
 
-# -- General configuration
+root_doc = 'source/index'
 
+# -- General configuration
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -33,5 +34,3 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
-
-root_doc = 'docs/source/index.rst'
