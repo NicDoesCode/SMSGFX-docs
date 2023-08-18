@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'SMSGFX'
-copyright = '2023, Qwerky Gamers'
+copyright = '2023, Qwerky Retro Gamers'
 author = 'Nicholas Furgiuele'
 
 release = '0.1'
