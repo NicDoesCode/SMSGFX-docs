@@ -3,14 +3,16 @@ Palette editor
 
 About palettes
 --------------
-Palettes are a list of 16 individual colours that may be used to colour the pixels within a tile map. 
+Palettes are a list of individual colours that may be used to colour the pixels within a tile. 
 
-You define a colour value for each of the 16 colour slots within the palette.
+You define a colour value for each of the allowed colour slots within the palette.
 
 **Palette limitations**
 
 * The Sega Master System gives you a selection or 64 colours in total that you can use (6-bit colour).
 * The Sega Game Gear gives you a selection or 4096 colours in total that you can use (12-bit colour).
+* The Nintendo Entertainment System gives you 56 colours to choose from.
+* The Nintendo Game Boy allows only 4 shades of grey.
 
 
 Working with palettes
@@ -31,11 +33,15 @@ These functions will be expanded on below.
 
 Defining a palette system
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-Because the Sega Master System and Game Gear define their palettes differently you will need to select the system that the palette is designed for.
+Only applies if you're working with a Sega Master System and Game Gear project.
+
+You'll be asked to select the system that the palette is designed for. This is due to the fact that 
+the palettes are defined differently in code.
 
 To change the system click on the icon for the desired system in the palette editor. 
 
-Changing systems will affect how the palette is exported and also how the colours are displayed in the tile editor. 
+Changing systems will affect how the palette is exported and also how the colours are displayed 
+in the tile editor. 
 
 
 Palette management functions
@@ -45,7 +51,8 @@ Moving between palettes
 ~~~~~~~~~~~~~~~~~~~~~~~
 You can define more than one palette in your project, and at times you would probably want to swap between these different palettes.
 
-To move between palettes click the drop down arror next to the palette's name at the top of the palette editor, and then select the palette that you would like to work with. 
+To move between palettes click the drop down arror next to the palette's name at the top of the palette editor, and then select the 
+palette that you would like to work with. 
 
 Keyboard shortcut: ``Ctrl`` and ``Up`` or ``Down`` arrow.
 
@@ -59,7 +66,10 @@ Keyboard shortcut: ``Ctrl`` + ``Alt`` + ``P``.
 
 Clone a palette
 ~~~~~~~~~~~~~~~
-If you are creating a multi-platform game then you may want to clone a palette. For example, you may create a palette that targets the Master System and then create a Game Gear version.
+You may wish use an existing palette as a template for creating a new palette. This is where the clone palette function is useful.
+
+Another example; if you are creating a Sega Master System and Game Gear project, you wish to create a palette that targets the Master System 
+and then clone to create a Game Gear version.
 
 To clone a palette, in the palette editor click the "Clone" button.
 
@@ -70,17 +80,20 @@ If you accidentally remove a palette, the action can be undone by clicking the "
 
 Naming a palette
 ~~~~~~~~~~~~~~~~
-You can assign a friendly name to your palette, this doesn't affect the palette itself, but will cause SMSGFX to automatically generate a code comment with the palette name when you export your project as code.
+You can assign a friendly name to your palette, this doesn't affect the palette itself, but will cause SMSGFX to automatically 
+generate a code comment with the palette name when you export your project as code.
 
-To name your palette, in the palette editor, click into the textbox above the palette, and type a new name. 
-Changes are automatically saved.
+To name your palette, in the palette editor, with the palette selected, either click onto the name of the palette or the edit 
+icon next to the name of the palette, and then type a new name. 
+
+Changes are automatically saved when you exit the text box.
 
 Emulate system colours
 ~~~~~~~~~~~~~~~~~~~~~~
 Enabling this function will show your palette colours and render your tile set colours to look similar to how they would look on the target system. 
 
-For the Master System this may have a profound impact on how your image looks, however it will give you an accurate preview of the final image. 
-For the Game Gear this may not make a large difference to your image because of the expanded colour palette that the Game Gear is capable of rendering.
+If you've defined colours using RGB, then enabling this may have a profound impact on how your image looks, however it is recommended 
+as it gives you an accurate indication of the final image. 
 
 Import a palette from code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,31 +127,33 @@ Choosing a colour
 ~~~~~~~~~~~~~~~~~
 There are two ways that you can choose a colour:
 
-* Using the colour picker dialogue.
-* Using the colour selector below the palette editor. 
+* **The colour selector** gives you a convenient colour editing ability without needing to display a popup window. 
+* **The colour picker dialogue** gives you colour editing ability in a popup window. The colour picker dialogue is 
+  shown by double clicking on a colour in your palette.
 
-**Using the colour picker dialogue**
+Both options give you similar functionality, the colour picker dialoguie allows you to cancel the operation if you 
+change your mind about choosing a colour.
 
-The colour picker dialogue gives you the most options when choosing a colour, to bring up the colour picker dialogue, with a palette colour index already selected, click it again and the colour picker dialogue will appear. 
-
-* Individual red, green and blue values can be adjusted using the sliders or entering their numeric values. 
-* The "Select colour" button will display the system's native colour picker for you to use.
-* The "Hex" box allows you to choose a colour using a hex value.
-
-The preview area displays two previews: 
-* Selected: the absolute value of the colour as selected.
-* Native: an approximation of how the colour will appear natively on the selected system.
-
-When you're done click the "Save changes" button.
-
-**Using the colour selector**
-
-The colour selector gives you a convenient inline colour editing ability without needing to display a distracting dialogue.
+**RGB tab**
 
 * Individual red, green and blue values can be adjusted using the sliders or entering their numeric values. 
 * The "Hex" box allows you to choose a colour using a hex value.
 * Clicking the colour preview box will display the system's native colour picker for you to use.
-* The "SMS colours" tab will display the entire colour palette from the Sega Master System, click on a colour to use that colour. 
+
+**SMS colours tab**
+
+* Only available on Sega Master System and Game Gear projects. 
+* It shows you all 64 colours available from the Sega Master System, click on a colour to use that colour.
+
+**GB shades tab**
+
+* Only available on Nintendo Game Boy projects. 
+* It shows you all 4 shades of grey available from the Game Boy, click on a shade to use that shade.
+
+**NES colours tab**
+
+* Only available on Nintendo Entertainment System projects. 
+* It shows you all 56 colours available from the Nintendo Entertainment System library, click on a colour to use that colour.
 
 Re-ordering colours
 ~~~~~~~~~~~~~~~~~~~

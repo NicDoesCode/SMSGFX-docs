@@ -43,12 +43,23 @@ The project menu is where you manage your loaded projects.
 #. Show the welcome screen.
 #. Close the project menu (you can also click outside the project menu or press the `ESC` key.)
 
+The options menu lets you tweak some application settings.
+
+.. image:: assets/images/options-menu.png
+    :alt: Project menu.
+
+1. **Interface theme** - Change between dark mode, light mode, or automatically use the same theme mode that the system is using.
+2. **Background theme** - Show a nice wallpaper behind the work area, or none if you prefer.
+3. **Show welcome screen** - When enabled, the welcome screen will always be shown when the application starts.
+4. **Show documentation** - When enabled, the documentation pane will always be shown when the application starts.
+
 Palette editor
 --------------
 The palette editor is where you create and manage your colour palettes.
 
 .. image:: assets/images/palette-editor.png
     :alt: Palette editor.
+    :scale: 50%
 
 1. Add a new palette with default colours and system selection.
 2. Import a colour palette from assembly code.
