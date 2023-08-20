@@ -1,6 +1,20 @@
 How to import an image as a new project
 =======================================
 
+.. warning:: 
+    **This feature is still under development**
+
+    Because image import feature is in early development the feature may not function as you expect, 
+    and will likely produce output with visual errors. 
+    
+    This feature will be further developed in future builds of SMSGFX.
+
+    For now please proceed with caution.
+
+.. warning:: 
+    Because this feature is not yet complete this documentation is currently out of date and will 
+    be refreshed once the feature is completed.
+
 This document refers to how to import a regular bitmap image into SMSGFX so that you may work with it.
 
 Load an image via the toolbar button

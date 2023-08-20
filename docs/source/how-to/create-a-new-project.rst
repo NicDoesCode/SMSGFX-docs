@@ -9,9 +9,13 @@ To create a new project:
     .. image:: ../assets/images/project-toolbar-with-project-highlight.png
         :alt: Where to find the project menu.
 2. Under the "**Create project**" heading click on the system that you would like to create the project for.
-3. The "**Create a new project**" dialogue appears, fields are explained below: 
     .. image:: ../assets/images/project-menu-with-new-project-highlight.png
         :alt: Where to find the new project button.
+        :height: 200
+3. The "**Create a new project**" dialogue appears, fields are explained below: 
+    .. image:: ../assets/images/new-project-dialogue.png
+        :alt: Where to find the new project button.
+        :height: 200
     1. **Title** - Enter the name for your new project.
     2. **System** - Select the target system.
     3. **Create a default tile map** - When this is selected we'll automatically create a tile map for you, normally
