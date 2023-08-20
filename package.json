@@ -1,0 +1,27 @@
+{
+  "name": "smsgfx-docs",
+  "version": "1.0.0",
+  "description": "SMSGFX Documentation project ============================",
+  "main": "app.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicDoesCode/SMSGFX-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicDoesCode/SMSGFX-docs/issues"
+  },
+  "homepage": "https://github.com/NicDoesCode/SMSGFX-docs#readme",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "https": "^1.0.0"
+  }
+}
