@@ -3,22 +3,70 @@ import fs from "fs";
 import url from 'url';
 import express from 'express';
 import https from 'https';
+import chokidar from 'chokidar';
+import { exec } from 'child_process';
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 const app = express();
+const docsDir = path.resolve('./docs');
+const sourceDir = path.resolve('./docs/source');
+const servDir = path.resolve('./docs/build/html');
 const portHttp = 8080;
 const portHttps = 8443;
 
+let buildQueued = false;
+let isBuilding = false;
 
-function startServer() {
+function watchSourceDirectoryForChanges() {
+    const watcher = chokidar.watch(sourceDir);
+    watcher.on('ready', () => {
+        console.log(`> Watching directory '${sourceDir}' for changes.`);
+        watcher.on('all', () => {
+            console.log('> File change detected.');
+            buildAsync();
+        });
+        buildAsync();
+    });
+}
 
-    let servPath = 'docs/build/html';
+async function buildAsync() {
+    if (!isBuilding) {
+        console.log('  - Build starting.');
 
-    app.use(express.static(servPath));
+        isBuilding = true;
+        buildQueued = false;
 
-    console.log(`Path: ${path.join(__dirname, servPath)}`);
-    
+        const { error, stdout, stderr } = await exec('make html', { cwd: docsDir });
+
+        isBuilding = false;
+
+        if (!error) {
+            console.log('  - Build completed.');
+        } else {
+            console.error('  - Build had errors.');
+            console.error(stdout);
+            console.error(stderr);
+        }
+        if (buildQueued) {
+            await buildAsync();
+        }
+
+    } else {
+        console.log('  - Currently building, new build queued.');
+        buildQueued = true;
+    }
+}
+
+
+async function startServer() {
+
+    await watchSourceDirectoryForChanges();
+
+    app.use(express.static(servDir));
+
+    console.log(`Path: ${servDir}`);
+
     app.listen(portHttp, () => {
         console.log(`Server running at: http://localhost:${portHttp}`);
     });
@@ -35,26 +83,5 @@ function startServer() {
     }
 
 }
-
-
-/**
- * Gets the environment from the '--path' or '-p' parameter.
- * @returns {string}
- */
-function getPath() {
-    let result = null;
-    process.argv.forEach((arg, index, args) => {
-        if (arg === '--path' || arg === '-p') {
-            if (index + 1 < args.length) {
-                const env = args[index + 1];
-                if (!env.startsWith('-')) {
-                    result = env;
-                }
-            }
-        }
-    });
-    return result;
-}
-
 
 startServer();

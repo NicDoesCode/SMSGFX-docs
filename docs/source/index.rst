@@ -7,7 +7,7 @@ consoles.
 .. image:: assets/images/home-page-banner.png
     :alt: SMSGFX application.
 
-Consoles that are currently supported:
+Consoles that are currently supported: 
 
 * Sega Game Gear
 * Sega Master System

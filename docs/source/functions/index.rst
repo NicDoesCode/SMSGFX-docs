@@ -1,7 +1,7 @@
 Functions
 =========
 
-The various main functions of the SMSGFX editor are explained in this section.
+The various main functions of the SMSGFX editor are explained in this section. 
 
 .. toctree::
 
