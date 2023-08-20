@@ -2,11 +2,20 @@
 Keyboard shortcuts
 ==================
 
+.. warning:: 
+    This page is currently out of date and may not be consistent with the current version of SMSGFX. 
+    Expect this documentation to be updated in future.
+
 The below table lists the current keyboard shortcuts for SMSGFX.
 
-Note: Currently there are no keyboard shortcuts for Apple devices, however this will be 
-resolved in future builds. For now please substitute "``control``" key for "``Ctrl``" and "``option``"
-key for "``Alt``" on the below listed shortcuts.
+.. note:: 
+    Keyboard shortcuts are currently not optimised for Apple MacOS devices. For now MacOS users 
+    should use PC keyboard shortcuts with the following key substitutions:
+
+    * Press [**control ^**] instead of [**Ctrl**]
+    * Press [**option ⌥**] instead of [**Alt**]
+
+    Apple MacOS optimised keyboard shortcuts will be added in future releases.
 
 +---------------------+-----------------------------------------------------------------------------------------------------------+
 | Key                 | Function                                                                                                  |

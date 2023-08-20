@@ -1,6 +1,10 @@
 Tile editor
 ===========
 
+.. warning:: 
+    This page is currently out of date and may not be consistent with the current version of SMSGFX. 
+    Expect this documentation to be updated in future.
+
 Working with the tile editor
 ----------------------------
 The tile editor is where you create and manage the tile library that's used in your game. 
